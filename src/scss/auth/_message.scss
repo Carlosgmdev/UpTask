@@ -1,0 +1,21 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.message {
+    margin-top: v.$separacion;
+    .uptask {
+        @include m.textoDegradado(v.$indigo);
+    }
+
+    input[type="submit"] {
+        @include m.boton(v.$indigo,v.$blanco);
+    }
+
+    .ico-mail {
+        display: flex;
+        justify-content: center;
+        ion-icon {
+            font-size: 20rem;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.recovery {
+    margin-top: v.$separacion;
+    .uptask {
+        @include m.textoDegradado(v.$rosa);
+    }
+
+    input[type="submit"] {
+        @include m.boton(v.$rosa,v.$blanco);
+    }
+}

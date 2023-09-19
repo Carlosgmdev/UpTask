@@ -1,0 +1,23 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.proyectos {
+    margin-top: 3rem;
+    @include m.grid(1,2rem);
+    @include m.tablet {
+        @include m.grid(2,2rem);
+    }
+    @include m.desktop {
+        @include m.grid(3,2rem);
+    }
+    .proyecto {
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+        border-radius: 2rem;
+        padding: 2rem;
+        height: 15rem;
+        text-decoration: none;
+        color: v.$blanco;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}

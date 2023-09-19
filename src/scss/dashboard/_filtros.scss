@@ -1,0 +1,38 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.filtros {
+    margin-top: 2rem;
+    padding: 2rem;
+    .filtros-inputs {
+        @include m.tablet {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        h2 {
+            font-size: 4rem;
+            color: v.$indigo;
+            text-align: center;
+            @include m.tablet {
+                margin: 0;
+            }
+        }
+        .campo {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            @include m.tablet {
+                margin-bottom: 0;
+            }
+        }
+        input[type="radio"] {
+            accent-color: v.$indigo;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+}

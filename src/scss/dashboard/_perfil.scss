@@ -1,0 +1,12 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.formulario {
+    input[type="submit"] {
+        @include m.boton(v.$indigo, v.$blanco);
+    }
+}
+
+.enlace {
+    @include m.boton(v.$naranja, v.$blanco);
+}

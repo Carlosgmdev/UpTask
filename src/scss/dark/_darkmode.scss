@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+@media (prefers-color-scheme: dark) {
+
+    $grisOscuro: #2c2c3b;
+
+    body {
+        background-color: $grisOscuro;
+    }
+
+    .tagline,
+    .descripcion-pagina,
+    .formulario .campo label,
+    .login .acciones a,
+    .formulario .campo input, 
+    .barra p,
+    .barra ion-icon,
+    .contenido .nombre-pagina,
+    .filtros .filtros-inputs .campo label,
+    .listado-tareas .tarea p,
+    .modal .nueva-tarea legend {
+        color: v.$blanco;
+    }
+
+    .formulario .campo input {
+        background-color: v.$gris;
+    }
+
+    .dashboard {
+        background-color: $grisOscuro;
+        .barra,
+        .contenido {
+            background-color: lighten($grisOscuro, 10);
+        }
+    }
+
+    .filtros .filtros-inputs h2 {
+        color: v.$cyan;
+    }
+
+    .modal .nueva-tarea {
+        background-color: $grisOscuro;
+    }
+
+}
